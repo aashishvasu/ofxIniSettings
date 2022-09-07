@@ -16,6 +16,7 @@
 #endif
 
 using namespace std;
+#define DEFAULT_SETTINGS_FILE "settings.ini"
 
 class ofxIniSettings
 {
@@ -23,9 +24,9 @@ public:
     ofxIniSettings();
     ~ofxIniSettings();
 
-    bool load(string file = "settings.ini");
-    bool save(string file = "settings.ini");
+    bool load(string file = DEFAULT_SETTINGS_FILE);	
+    bool save(string file = DEFAULT_SETTINGS_FILE, bool prettyPrint = true);
     
 private:
-    /* data */
+	mINI::INIStructure structure_;
 };

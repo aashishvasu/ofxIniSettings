@@ -17,10 +17,16 @@ ofxIniSettings::~ofxIniSettings()
 
 bool ofxIniSettings::load(string file)
 {
-	return false;
+	// Create a INIFile instance
+	const mINI::INIFile filepath(file);
+	
+	return filepath.read(structure_);
 }
 
-bool ofxIniSettings::save(string file)
+bool ofxIniSettings::save(string file, bool prettyPrint)
 {
-	return false;
+	// Create a INIFile instance
+	const mINI::INIFile filepath(file);
+	
+	return filepath.generate(structure_, prettyPrint);
 }
