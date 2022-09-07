@@ -18,3 +18,6 @@ Either clone or download the code into the `openFrameworks/addons/` folder.
 
 ## Contributing
 If you want to contribute to this (admittedly tiny) addon, [fork the repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and create a pull request with your changes.
+
+## Credits
+* [pulzed](https://github.com/pulzed) - mINI
