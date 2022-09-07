@@ -1,0 +1,1 @@
+﻿NDContentPage.OnToolTipsLoaded({7:"<div class=\"NDToolTip TVariable LC\"><div id=\"NDPrototype7\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">mINI::INIStructure structure_</div></div><div class=\"TTSummary\">This ini structure will store all the values needed by this ini file</div></div>"});
