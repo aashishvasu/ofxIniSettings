@@ -34,7 +34,16 @@ public:
 	ofxIniSettings();
 	// Destructor: ~ofxIniSettings
 	~ofxIniSettings();
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Group: File IO
+	// Saving and loading files from this addon is relatively safe without checking if the file exists.
+	// If <load> is called without the file existing, this will simply generate an empty <structure_> to
+	// which sections and keys can be added.
+	//
+	// If <save> is called without the file existing, then the operation simply creates a file at that
+	// path and writes the existing <structure_> to it, regardless if it is empty or not.
+	//
 	/**
 	 * Function: load
 	 * Load an INI structure into memory to access it. If no file exists, ini structure will be empty.
@@ -66,9 +75,11 @@ public:
 	 */
 	bool save(string file = DEFAULT_SETTINGS_FILE, bool bPrettyPrint = true, bool bOverwrite = false);
 
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Group: Data getters
-	// All data getters call <getString> and then convert to their various types and have the same function parameters. Do note that this is not a safe
-	// operation and will result in empty return values if the keys don't exist in the ini.
+	// All data getters call <getString> and then convert to their various types and have the same
+	// function parameters. Do note that this is not a safe	// operation and will result in empty return
+	// values if the keys don't exist in the ini.
 	//
 	// Parameters:
 	// string section - The name of the section in the ini file.
@@ -102,6 +113,7 @@ public:
 	 */
 	float getFloat(string section, string key);
 
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Group: Data setters
 	// All data setters call <setString> at the end after their data types have been converted to string.
 	//
