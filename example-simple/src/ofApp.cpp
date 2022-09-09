@@ -9,6 +9,9 @@ void ofApp::setup()
 	ofLog(OF_LOG_NOTICE) << "setBool = " << (setBool ? "true" : "false");
 	ofLog(OF_LOG_NOTICE, "setInt = " + ofToString(setInt));
 	ofLog(OF_LOG_NOTICE, "setFloat = " + ofToString(setFloat));
+	ofLog(OF_LOG_NOTICE, "setVec2f = " + ofToString(setVec2f));
+	ofLog(OF_LOG_NOTICE, "setVec3f = " + ofToString(setVec3f));
+	ofLog(OF_LOG_NOTICE, "setVec4f = " + ofToString(setVec4f));
 
 	// Load settings file if it exists. if it doesnt, create one with some default values that are different from the class default values for testing.
 	ofFile settingsFile(ofToDataPath("settings.ini"));
@@ -18,6 +21,9 @@ void ofApp::setup()
 		settings.setBool("SETTINGS", "setBool", true);
 		settings.setInt("SETTINGS", "setInt", 1337);
 		settings.setFloat("SETTINGS", "setFloat", 3.14f);
+		settings.setVec2f("SETTINGS", "setVec2f", ofVec2f(1, 2));
+		settings.setVec3f("SETTINGS", "setVec3f", ofVec3f(1, 2, 3));
+		settings.setVec4f("SETTINGS", "setVec4f", ofVec4f(1, 2, 3, 4));
 
 		// Create the settings file simply by calling save
 		settings.save(ofToDataPath("settings.ini"));
@@ -31,6 +37,9 @@ void ofApp::setup()
 	setBool = settings.getBool("SETTINGS", "setBool");
 	setInt = settings.getInt("SETTINGS", "setInt");
 	setFloat = settings.getFloat("SETTINGS", "setFloat");
+	setVec2f = settings.getVec2f("SETTINGS", "setVec2f");
+	setVec3f = settings.getVec3f("SETTINGS", "setVec3f");
+	setVec4f = settings.getVec4f("SETTINGS", "setVec4f");
 
 	// Log all the values after loading settings
 	ofLogWarning("After loading settings");
@@ -38,6 +47,9 @@ void ofApp::setup()
 	ofLog(OF_LOG_NOTICE) << "setBool = " << (setBool ? "true" : "false");
 	ofLog(OF_LOG_NOTICE, "setInt = " + ofToString(setInt));
 	ofLog(OF_LOG_NOTICE, "setFloat = " + ofToString(setFloat));
+	ofLog(OF_LOG_NOTICE, "setVec2f = " + ofToString(setVec2f));
+	ofLog(OF_LOG_NOTICE, "setVec3f = " + ofToString(setVec3f));
+	ofLog(OF_LOG_NOTICE, "setVec4f = " + ofToString(setVec4f));
 }
 
 //--------------------------------------------------------------

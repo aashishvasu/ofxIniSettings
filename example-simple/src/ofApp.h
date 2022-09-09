@@ -30,4 +30,7 @@ private:
 	bool setBool = false;
 	int setInt = -1;
 	float setFloat = -1.f;
+	ofVec2f setVec2f = ofVec2f(-1,-1);
+	ofVec3f setVec3f = ofVec3f(-1,-1, -1);
+	ofVec4f setVec4f = ofVec4f(-1,-1, -1, -1);
 };
