@@ -34,8 +34,9 @@ Either clone or download the code into the `openFrameworks/addons/` folder. Then
 	string myString = settings.getString("Section Name", "StringKey");
 	```
 
-### Example
-Open the [`/example-simple`](/example-simple/) directory for a simple example that loads an ini file and writes changes to console.
+### Examples
+* Open the [`/example-simple`](/example-simple/) directory for a simple example that loads an ini file and writes changes to console.
+* Open the [`/example-ofxGui`](/example-ofxGui/) directory for an example of loading and saving settings with a GUI made with `ofxGui` using `ofParameter` style variables.
 
 ## Class Documentation
 Documentation is generated using [Natural Docs](https://naturaldocs.org/). Clone or download the repository and open [`/docs/index.html`](/docs/index.html) to find class and function documentation.
