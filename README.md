@@ -8,15 +8,40 @@ openFrameworks addon for providing a simple and straightforward way to manage se
 Either clone or download the code into the `openFrameworks/addons/` folder. Then you can use the OF Project Generator to add this addon to your project.
 
 ## Usage
-[WIP]
+1. Create the `ofxIniSettings` object
+	```cpp
+	ofxIniSettings settings;
+	```
+2. Save some parameters to the object
+	```cpp
+	int myInt = 0;
+	string myString = "Test";
+
+	// Add parameters to the setting structure
+	settings.setInt("Section Name", "IntKey", myInt);
+	settings.setString("Section Name", "StringKey", myString);
+
+	// Save the file
+	settings.save(ofToDataPath("settings.ini"));
+	```
+3. Load the file and parameters
+	```cpp
+	// Load the file
+	settings.load(ofToDataPath("settings.ini"));
+
+	// Load parameters
+	int myInt = settings.getInt("Section Name", "IntKey");
+	string myString = settings.getString("Section Name", "StringKey");
+	```
+
 ### Example
 Open the [`/example-simple`](/example-simple/) directory for a simple example that loads an ini file and writes changes to console.
 
-## Documentation
+## Class Documentation
 Documentation is generated using [Natural Docs](https://naturaldocs.org/). Clone or download the repository and open [`/docs/index.html`](/docs/index.html) to find class and function documentation.
 
 ## Known issues
-[WIP]
+None (I think??)
 
 ## Why did I make this?
 openFrameworks by default only has an interface to save a settings file in the `.xml` format. In my opinion, although any plaintext format is as good as the next in terms of programmatically reading and writing to a file, making the file human-readable is another thing altogether. Trying to read XML files really hurts the eyes and possibly the brain.
@@ -68,7 +93,8 @@ parameter = 0
 parameter = 0
 ```
 
-In the context of creating an interface for settings, I find it more than adequate for the job. I won't go so far as to claim that it is the defacto standard for storing any kind of configuration data, but its damn close to it.
+In the context of creating a good, readable, and painless interface for settings, I find it more than adequate for the job. I won't go so far as to claim that it is the defacto standard for storing any kind of configuration data, but its damn close to it.
+
 ## License
 `ofxIniSettings` is available under the [MIT License](/license.md).
 
