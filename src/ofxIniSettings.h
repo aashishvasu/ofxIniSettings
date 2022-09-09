@@ -202,7 +202,26 @@ public:
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Group: Data checks
+	/**
+	 * Function: exists
+	 *
+	 * Parameters:
+	 * section - Name of the section in the ini structure.
+	 *
+	 * Returns:
+	 * True if section exists, false if not.
+	 */
 	bool exists(string section);
+	/**
+	 * Function: exists
+	 *
+	 * Parameters:
+	 * section - Name of the section in the ini structure.
+	 * key - Name of the key in the section above.
+	 *
+	 * Returns:
+	 * True if the key exists, returns false if either the section or the key doesn't exist.
+	 */
 	bool exists(string section, string key);
 	
 private:
