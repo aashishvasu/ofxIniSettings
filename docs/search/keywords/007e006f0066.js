@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("~of",["Function"],[["~ofxIniSettings",,[["ofxIniSettings",,,,0,"File:ofxIniSettings.h:ofxIniSettings.~ofxIniSettings","CClass:ofxIniSettings:~ofxIniSettings"]]]]);

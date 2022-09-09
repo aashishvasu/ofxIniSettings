@@ -1,1 +1,1 @@
-﻿NDSearch.OnPrefixIndexLoaded(["def","loa","ofx","sav","str"]);
+﻿NDSearch.OnPrefixIndexLoaded(["<de","get","loa","ofx","sav","set","str","~of"]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("<de",["Macro"],[["&lt;DEFAULT_SETTINGS_FILE&gt;","<default_settings_file>",[[,,,"<default_settings_file>",0,"File:ofxIniSettings.h:<DEFAULT_SETTINGS_FILE>"]]]]);

@@ -12,41 +12,109 @@
  <div class="CTitle">Macros</div>
 </div>
 
-<a name="DEFAULT_SETTINGS_FILE"></a><a name="Topic2"></a><div class="CTopic TMacro LC">
- <div class="CTitle">DEFAULT_SETTINGS_FILE</div>
+<a name="&lt;DEFAULT_SETTINGS_FILE&gt;"></a><a name="Topic10"></a><div class="CTopic TMacro LC">
+ <div class="CTitle">&lt;DEFAULT_SETTINGS_FILE&gt;</div>
  <div class="CBody"><p>The default name of the file that will be accessed.</p></div>
 </div>
 
-<a name="ofxIniSettings"></a><a name="Topic5"></a><div class="CTopic TClass LC">
+<a name="ofxIniSettings"></a><a name="Topic4"></a><div class="CTopic TClass LC">
  <div class="CTitle">ofxIniSettings</div>
- <div class="NDClassPrototype" id="NDClassPrototype5"><div class="CPEntry TClass Current"><div class="CPName">ofxIniSettings</div></div></div>
- <div class="CBody"><p>Top level class to create an `ofxIniSettings` object, which will handle all the loading, saving and editing of the data that needs to be stored in the ini file.</p></div>
+ <div class="NDClassPrototype" id="NDClassPrototype4"><div class="CPEntry TClass Current"><div class="CPName">ofxIniSettings</div></div></div>
+ <div class="CBody"><p>Top level class to create an ofxIniSettings object, which will handle all the loading, saving and editing of the data that needs to be stored in the ini file.</p></div>
 </div>
 
-<a name="ofxIniSettings.Functions"></a><a name="Topic3"></a><div class="CTopic TGroup LC">
- <div class="CTitle">Functions</div>
+<a name="ofxIniSettings.ofxIniSettings"></a><a name="Topic3"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">ofxIniSettings</div>
+ <div id="NDPrototype3" class="NDPrototype"><div class="PSection PPlainSection">ofxIniSettings()</div></div>
+</div>
+
+<a name="ofxIniSettings.~ofxIniSettings"></a><a name="Topic7"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">~ofxIniSettings</div>
+ <div id="NDPrototype7" class="NDPrototype"><div class="PSection PPlainSection">~ofxIniSettings()</div></div>
+</div>
+
+<a name="ofxIniSettings.File_IO"></a><a name="Topic5"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">File IO</div>
 </div>
 
 <a name="ofxIniSettings.load"></a><a name="Topic9"></a><div class="CTopic TFunction LC">
  <div class="CTitle">load</div>
  <div id="NDPrototype9" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">bool</span> load(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName">file</td><td class="PDefaultValueSeparator">&nbsp;=&nbsp;</td><td class="PDefaultValue last">DEFAULT_SETTINGS_FILE</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
- <div class="CBody"><p>Load an INI structure into memory to access it. If no file exists, ini structure will be empty.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">file<div class="CDLParameterType"><span class="SHKeyword">string</span></div></td><td class="CDLDefinition"><p>The file path to the file. Relative to the executable directory.</p></td></tr></table><div class="CHeading">Returns</div><p>True if file was successfully loaded.</p><p>See also: <a href="../index.html#File:ofxIniSettings.h:ofxIniSettings.structure_" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >structure_</a></p></div>
+ <div class="CBody"><p>Load an INI structure into memory to access it. If no file exists, ini structure will be empty.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">file<div class="CDLParameterType"><span class="SHKeyword">string</span></div></td><td class="CDLDefinition"><p>The file path to the file. Relative to the executable directory.</p></td></tr></table><div class="CHeading">Returns</div><p>True if file was successfully loaded.</p><p>See also: <a href="../index.html#File:ofxIniSettings.h:ofxIniSettings.structure_" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,22);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >structure_</a></p></div>
 </div>
 
-<a name="ofxIniSettings.save"></a><a name="Topic10"></a><div class="CTopic TFunction LC">
+<a name="ofxIniSettings.save"></a><a name="Topic2"></a><div class="CTopic TFunction LC">
  <div class="CTitle">save</div>
- <div id="NDPrototype10" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">bool</span> save(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName">file</td><td class="PDefaultValueSeparator">&nbsp;=&nbsp;</td><td class="PDefaultValue last">DEFAULT_SETTINGS_FILE,</td></tr><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName">prettyPrint</td><td class="PDefaultValueSeparator">&nbsp;=&nbsp;</td><td class="PDefaultValue last"><span class="SHKeyword">true</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
- <div class="CBody"><p>Save the INI structure to file.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">file<div class="CDLParameterType"><span class="SHKeyword">string</span></div></td><td class="CDLDefinition"><p>The file path to the .ini file. Relative to the executable directory.</p></td></tr><tr><td class="CDLEntry">prettyPrint<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Whether white spaces should be added (true) or ignored (false) in the output file.</p></td></tr></table><div class="CHeading">Returns</div><p>True if file was successfully saved.</p><p>See also: <a href="../index.html#File:ofxIniSettings.h:ofxIniSettings.structure_" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,7);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >structure_</a></p></div>
+ <div id="NDPrototype2" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">bool</span> save(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName">file</td><td class="PDefaultValueSeparator">&nbsp;=&nbsp;</td><td class="PDefaultValue last">DEFAULT_SETTINGS_FILE,</td></tr><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName">bPrettyPrint</td><td class="PDefaultValueSeparator">&nbsp;=&nbsp;</td><td class="PDefaultValue last"><span class="SHKeyword">true</span>,</td></tr><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName">bOverwrite</td><td class="PDefaultValueSeparator">&nbsp;=&nbsp;</td><td class="PDefaultValue last"><span class="SHKeyword">false</span></td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><p>Save the INI structure <a href="../index.html#File:ofxIniSettings.h:ofxIniSettings.structure_" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,22);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >structure_</a> to file.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">file<div class="CDLParameterType"><span class="SHKeyword">string</span></div></td><td class="CDLDefinition"><p>The file path to the .ini file. Relative to the executable directory.</p></td></tr><tr><td class="CDLEntry">bPrettyPrint<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Whether white spaces should be added (true) or ignored (false) in the output file. Defaults to true.</p></td></tr><tr><td class="CDLEntry">bOverwrite<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Whether the file should be overwritten on save, or appended. Defaults to false.</p></td></tr></table><div class="CHeading">Returns</div><p>True if file was successfully saved.</p><p>See also: <a href="../index.html#File:ofxIniSettings.h:ofxIniSettings.structure_" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,22);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >structure_</a></p></div>
+</div>
+
+<a name="ofxIniSettings.Data_getters"></a><a name="Topic13"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Data getters</div>
+ <div class="CBody"><p>All data getters call <a href="../index.html#File:ofxIniSettings.h:ofxIniSettings.getString" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,8);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >getString</a> and then convert to their various types and have the same function parameters. Do note that this is not a safe operation and will result in empty return values if the keys don't exist in the ini.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">string section</td><td class="CDLDefinition"><p>The name of the section in the ini file.</p></td></tr><tr><td class="CDLEntry">string key</td><td class="CDLDefinition"><p>The name of the key in the section above in the ini file.</p></td></tr></table></div>
+</div>
+
+<a name="ofxIniSettings.getString"></a><a name="Topic8"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">getString</div>
+ <div id="NDPrototype8" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">string</span> getString(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">section,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">key</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><div class="CHeading">Returns</div><p>String value at the current section and key in the ini.</p></div>
+</div>
+
+<a name="ofxIniSettings.getBool"></a><a name="Topic14"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">getBool</div>
+ <div id="NDPrototype14" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">bool</span> getBool(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">section,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">key</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><div class="CHeading">Returns</div><p>Boolean value at the current section and key in the ini.</p></div>
+</div>
+
+<a name="ofxIniSettings.getInt"></a><a name="Topic15"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">getInt</div>
+ <div id="NDPrototype15" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">int</span> getInt(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">section,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">key</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><div class="CHeading">Returns</div><p>Integer value at the current section and key in the ini.</p></div>
+</div>
+
+<a name="ofxIniSettings.getFloat"></a><a name="Topic16"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">getFloat</div>
+ <div id="NDPrototype16" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">float</span> getFloat(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">section,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">key</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><div class="CHeading">Returns</div><p>Floating point value at the current section and key in the ini.</p></div>
+</div>
+
+<a name="ofxIniSettings.Data_setters"></a><a name="Topic17"></a><div class="CTopic TGroup LC">
+ <div class="CTitle">Data setters</div>
+ <div class="CBody"><p>All data setters call <a href="../index.html#File:ofxIniSettings.h:ofxIniSettings.setString" target="_top" onmouseover="NDContentPage.OnLinkMouseOver(event,18);" onmouseout="NDContentPage.OnLinkMouseOut(event);" >setString</a> at the end after their data types have been converted to string.</p><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">string section</td><td class="CDLDefinition"><p>The name of the section in the ini file.</p></td></tr><tr><td class="CDLEntry">string key</td><td class="CDLDefinition"><p>The name of the key in the section above in the ini file.</p></td></tr></table></div>
+</div>
+
+<a name="ofxIniSettings.setString"></a><a name="Topic18"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">setString</div>
+ <div id="NDPrototype18" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> setString(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">section,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">key,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">inString</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">inString<div class="CDLParameterType"><span class="SHKeyword">string</span></div></td><td class="CDLDefinition"><p>Reference to the input string.</p></td></tr></table></div>
+</div>
+
+<a name="ofxIniSettings.setBool"></a><a name="Topic19"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">setBool</div>
+ <div id="NDPrototype19" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> setBool(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">section,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">key,</td></tr><tr><td class="PType first"><span class="SHKeyword">bool</span>&nbsp;</td><td class="PName last">inBool</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">inBool<div class="CDLParameterType"><span class="SHKeyword">bool</span></div></td><td class="CDLDefinition"><p>Reference to the input bool.</p></td></tr></table></div>
+</div>
+
+<a name="ofxIniSettings.setInt"></a><a name="Topic20"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">setInt</div>
+ <div id="NDPrototype20" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> setInt(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">section,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">key,</td></tr><tr><td class="PType first"><span class="SHKeyword">int</span>&nbsp;</td><td class="PName last">inInt</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">inInt<div class="CDLParameterType"><span class="SHKeyword">int</span></div></td><td class="CDLDefinition"><p>Reference to the input bool.</p></td></tr></table></div>
+</div>
+
+<a name="ofxIniSettings.setFloat"></a><a name="Topic21"></a><div class="CTopic TFunction LC">
+ <div class="CTitle">setFloat</div>
+ <div id="NDPrototype21" class="NDPrototype WideForm"><div class="PSection PParameterSection CStyle"><table><tr><td class="PBeforeParameters"><span class="SHKeyword">void</span> setFloat(</td><td class="PParametersParentCell"><table class="PParameters"><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">section,</td></tr><tr><td class="PType first"><span class="SHKeyword">string</span>&nbsp;</td><td class="PName last">key,</td></tr><tr><td class="PType first"><span class="SHKeyword">float</span>&nbsp;</td><td class="PName last">inFloat</td></tr></table></td><td class="PAfterParameters">)</td></tr></table></div></div>
+ <div class="CBody"><div class="CHeading">Parameters</div><table class="CDefinitionList"><tr><td class="CDLEntry">inFloat<div class="CDLParameterType"><span class="SHKeyword">float</span></div></td><td class="CDLDefinition"><p>Reference to the input float.</p></td></tr></table></div>
 </div>
 
 <a name="ofxIniSettings.Variables"></a><a name="Topic6"></a><div class="CTopic TGroup LC">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="ofxIniSettings.structure_"></a><a name="Topic7"></a><div class="CTopic TVariable LC last">
+<a name="ofxIniSettings.structure_"></a><a name="Topic22"></a><div class="CTopic TVariable LC last">
  <div class="CTitle">structure_</div>
- <div id="NDPrototype7" class="NDPrototype"><div class="PSection PPlainSection">mINI::INIStructure structure_</div></div>
- <div class="CBody"><p>This ini structure will store all the values needed by this ini file</p></div>
+ <div id="NDPrototype22" class="NDPrototype"><div class="PSection PPlainSection">mINI::INIStructure structure_</div></div>
+ <div class="CBody"><p>This ini structure will store all the values needed by the ini file.</p></div>
 </div>
 
 </body></html>
