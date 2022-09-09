@@ -17,10 +17,10 @@
 
 using namespace std;
 /**
- * Define: DEFAULT_SETTINGS_FILE
+ * Define: <DEFAULT_SETTINGS_FILE>
  * The default name of the file that will be accessed.
  */
-#define DEFAULT_SETTINGS_FILE "settings.ini"
+#define DEFAULT_SETTINGS_FILE ofToDataPath("settings.ini")
 
 /**
  * Class: ofxIniSettings
