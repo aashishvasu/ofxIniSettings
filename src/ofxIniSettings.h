@@ -199,6 +199,11 @@ public:
 	 * <ofVec4f:https://openframeworks.cc/documentation/math/ofVec4f/>
 	 */
 	void setVec4f(string section, string key, ofVec4f inVec4f);
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Group: Data checks
+	bool exists(string section);
+	bool exists(string section, string key);
 	
 private:
 	// Group: Variables

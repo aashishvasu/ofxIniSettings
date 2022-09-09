@@ -102,3 +102,16 @@ void ofxIniSettings::setVec4f(string section, string key, ofVec4f inVec4f)
 {
 	setString(section, key, ofToString(inVec4f));
 }
+
+bool ofxIniSettings::exists(string section)
+{
+	return structure_.has(section);
+}
+
+bool ofxIniSettings::exists(string section, string key)
+{
+	if(exists(section))
+		return structure_[section].has(key);
+	
+	return false;
+}
