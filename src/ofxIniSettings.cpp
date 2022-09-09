@@ -52,6 +52,21 @@ float ofxIniSettings::getFloat(const string section, const string key)
 	return ofToFloat(getString(section, key));
 }
 
+ofVec2f ofxIniSettings::getVec2f(string section, string key)
+{
+	return ofFromString<ofVec2f>(getString(section, key));
+}
+
+ofVec3f ofxIniSettings::getVec3f(string section, string key)
+{
+	return ofFromString<ofVec3f>(getString(section, key));
+}
+
+ofVec4f ofxIniSettings::getVec4f(string section, string key)
+{
+	return ofFromString<ofVec4f>(getString(section, key));
+}
+
 // Setters
 void ofxIniSettings::setString(const string section, const string key, const string inString)
 {
@@ -71,4 +86,19 @@ void ofxIniSettings::setInt(const string section, const string key, const int in
 void ofxIniSettings::setFloat(const string section, const string key, const float inFloat)
 {
 	setString(section, key, ofToString(inFloat));
+}
+
+void ofxIniSettings::setVec2f(string section, string key, ofVec2f inVec2f)
+{
+	setString(section, key, ofToString(inVec2f));
+}
+
+void ofxIniSettings::setVec3f(string section, string key, ofVec3f inVec3f)
+{
+	setString(section, key, ofToString(inVec3f));
+}
+
+void ofxIniSettings::setVec4f(string section, string key, ofVec4f inVec4f)
+{
+	setString(section, key, ofToString(inVec4f));
 }

@@ -38,9 +38,9 @@ public:
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Group: File IO
 	// Saving and loading files from this addon is relatively safe without checking if the file exists.
+	//
 	// If <load> is called without the file existing, this will simply generate an empty <structure_> to
 	// which sections and keys can be added.
-	//
 	// If <save> is called without the file existing, then the operation simply creates a file at that
 	// path and writes the existing <structure_> to it, regardless if it is empty or not.
 	//
@@ -112,6 +112,27 @@ public:
 	 * Floating point value at the current section and key in the ini.
 	 */
 	float getFloat(string section, string key);
+	/**
+	 * Function: getVec2f
+	 *
+	 * Returns:
+	 * <ofVec2f:https://openframeworks.cc/documentation/math/ofVec2f/> structure at the current section and key in the ini.
+	 */
+	ofVec2f getVec2f(string section, string key);
+	/**
+	 * Function: getVec3f
+	 *
+	 * Returns:
+	 * <ofVec3f:https://openframeworks.cc/documentation/math/ofVec3f/> structure at the current section and key in the ini.
+	 */
+	ofVec3f getVec3f(string section, string key);
+	/**
+	 * Function: getVec4f
+	 *
+	 * Returns:
+	 * <ofVec4f:https://openframeworks.cc/documentation/math/ofVec4f/> structure at the current section and key in the ini.
+	 */
+	ofVec4f getVec4f(string section, string key);
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Group: Data setters
@@ -148,6 +169,36 @@ public:
 	 * inFloat - Reference to the input float.
 	 */
 	void setFloat(string section, string key, float inFloat);
+	/**
+	 * Function: setVec2f
+	 *
+	 * Parameters:
+	 * inVec2f - Reference to the input ofVec2f.
+	 *
+	 * See also:
+	 * <ofVec2f:https://openframeworks.cc/documentation/math/ofVec2f/>
+	 */
+	void setVec2f(string section, string key, ofVec2f inVec2f);
+	/**
+	 * Function: setVec3f
+	 *
+	 * Parameters:
+	 * inVec3f - Reference to the input ofVec2f.
+	 *
+	 * See also:
+	 * <ofVec3f:https://openframeworks.cc/documentation/math/ofVec3f/>
+	 */
+	void setVec3f(string section, string key, ofVec3f inVec3f);
+	/**
+	 * Function: setVec4f
+	 *
+	 * Parameters:
+	 * inVec4f - Reference to the input ofVec2f.
+	 *
+	 * See also:
+	 * <ofVec4f:https://openframeworks.cc/documentation/math/ofVec4f/>
+	 */
+	void setVec4f(string section, string key, ofVec4f inVec4f);
 	
 private:
 	// Group: Variables
