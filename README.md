@@ -10,7 +10,7 @@ Either clone or download the code into the `openFrameworks/addons/` folder.
 ## Usage
 [WIP]
 ### Example
-Open the [`/example-simple`](/example-simple/) directory for a simple example that loads an ini file and writes to console.
+Open the [`/example-simple`](/example-simple/) directory for a simple example that loads an ini file and writes changes to console.
 
 ## Documentation
 Documentation is generated using [Natural Docs](https://naturaldocs.org/). Clone or download the repository and open [`/docs/index.html`](/docs/index.html) to find class and function documentation.
