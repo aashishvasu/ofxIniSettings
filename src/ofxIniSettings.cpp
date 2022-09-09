@@ -52,19 +52,24 @@ float ofxIniSettings::getFloat(const string section, const string key)
 	return ofToFloat(getString(section, key));
 }
 
-ofVec2f ofxIniSettings::getVec2f(string section, string key)
+ofVec2f ofxIniSettings::getVec2f(const string section, const string key)
 {
 	return ofFromString<ofVec2f>(getString(section, key));
 }
 
-ofVec3f ofxIniSettings::getVec3f(string section, string key)
+ofVec3f ofxIniSettings::getVec3f(const string section, const string key)
 {
 	return ofFromString<ofVec3f>(getString(section, key));
 }
 
-ofVec4f ofxIniSettings::getVec4f(string section, string key)
+ofVec4f ofxIniSettings::getVec4f(const string section, const string key)
 {
 	return ofFromString<ofVec4f>(getString(section, key));
+}
+
+ofColor ofxIniSettings::getColor(const string section, const string key)
+{
+	return ofFromString<ofColor>(getString(section, key));
 }
 
 // Setters
@@ -88,19 +93,24 @@ void ofxIniSettings::setFloat(const string section, const string key, const floa
 	setString(section, key, ofToString(inFloat));
 }
 
-void ofxIniSettings::setVec2f(string section, string key, ofVec2f inVec2f)
+void ofxIniSettings::setVec2f(const string section, const string key, const ofVec2f inVec2f)
 {
 	setString(section, key, ofToString(inVec2f));
 }
 
-void ofxIniSettings::setVec3f(string section, string key, ofVec3f inVec3f)
+void ofxIniSettings::setVec3f(const string section, const string key, const ofVec3f inVec3f)
 {
 	setString(section, key, ofToString(inVec3f));
 }
 
-void ofxIniSettings::setVec4f(string section, string key, ofVec4f inVec4f)
+void ofxIniSettings::setVec4f(const string section, const string key, const ofVec4f inVec4f)
 {
 	setString(section, key, ofToString(inVec4f));
+}
+
+void ofxIniSettings::setColor(const string section, const string key, const ofColor inColor)
+{
+	setString(section, key, ofToString(inColor));
 }
 
 bool ofxIniSettings::exists(string section)

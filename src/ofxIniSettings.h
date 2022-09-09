@@ -133,6 +133,13 @@ public:
 	 * <ofVec4f:https://openframeworks.cc/documentation/math/ofVec4f/> structure at the current section and key in the ini.
 	 */
 	ofVec4f getVec4f(string section, string key);
+	/**
+	 * Function: getColor
+	 *
+	 * Returns:
+	 * <ofColor:https://openframeworks.cc/documentation/types/ofColor/> structure at the current section and key in the ini.
+	 */
+	ofColor getColor(string section, string key);
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Group: Data setters
@@ -183,7 +190,7 @@ public:
 	 * Function: setVec3f
 	 *
 	 * Parameters:
-	 * inVec3f - Reference to the input ofVec2f.
+	 * inVec3f - Reference to the input ofVec3f.
 	 *
 	 * See also:
 	 * <ofVec3f:https://openframeworks.cc/documentation/math/ofVec3f/>
@@ -193,12 +200,22 @@ public:
 	 * Function: setVec4f
 	 *
 	 * Parameters:
-	 * inVec4f - Reference to the input ofVec2f.
+	 * inVec4f - Reference to the input ofVec4f.
 	 *
 	 * See also:
 	 * <ofVec4f:https://openframeworks.cc/documentation/math/ofVec4f/>
 	 */
 	void setVec4f(string section, string key, ofVec4f inVec4f);
+	/**
+	 * Function: setColor
+	 *
+	 * Parameters:
+	 * inColor - Reference to the input ofColor.
+	 *
+	 * See also:
+	 * <ofColor:https://openframeworks.cc/documentation/types/ofColor/>
+	 */
+	void setColor(string section, string key, ofColor inColor);
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Group: Data checks
